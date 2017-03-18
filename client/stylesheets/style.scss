@@ -350,3 +350,15 @@ footer.white-text a, .filter-area a {
     color: #3F51B5;
   }
 }
+
+#dropdown {
+  .dropdown-content {
+    background-color: #000000;
+  }
+  .dropdown-content li > a, .dropdown-content li > span {
+    color: white;
+  }
+  .dropdown-content li:hover > a, .dropdown-content li > span {
+    color: #000000;
+  }
+}

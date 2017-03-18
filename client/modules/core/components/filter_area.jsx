@@ -1,5 +1,6 @@
-import React from "react";
-import {formatHelper} from "/client/helpers/format-helpers";
+import React from 'react';
+import {formatHelper} from '/client/helpers/format-helpers';
+import Dropdown from '../containers/dropdown';
 class FilterArea extends React.Component {
   constructor(props) {
     super(props);
@@ -26,16 +27,29 @@ class FilterArea extends React.Component {
     let {sortTypes}=this.state;
     let {dappCount, toggleDirection, toggleSortType, sortType, sortDirection}= this.props;
     return (
-      <div>
+      <div className="row">
         <div className='filter-area white-text'>
-          <div className='col s5'>
-            {dappCount} dapps listed
+          <div className="col s6">
+            <div className='col s6'>
+              {dappCount} dapps listed
+            </div>
+            <div className="col s6">
+
+            </div>
           </div>
-          <div className='col s7 right-align'>
-            Sort: <a className="sort-direction"
-                     onClick={toggleSortType.bind(this)}>{formatHelper.capitalize(sortType)} </a>
-            <i className={`sort-direction fa fa-sort-amount-${sortDirection}`}
-               onClick={toggleDirection.bind(this)}></i>
+
+
+          <div className='col s6 right-align'>
+            <div className="col s6">
+              <Dropdown/>
+            </div>
+            <div className="col s6">
+              Sort: <a className="sort-direction"
+                       onClick={toggleSortType.bind(this)}>{formatHelper.capitalize(sortType)} </a>
+              <i className={`sort-direction fa fa-sort-amount-${sortDirection}`}
+                 onClick={toggleDirection.bind(this)}></i>
+            </div>
+
           </div>
         </div>
 
