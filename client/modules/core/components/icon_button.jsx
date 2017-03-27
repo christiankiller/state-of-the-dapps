@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class IconButton extends React.Component {
   constructor(props) {
@@ -7,8 +7,10 @@ class IconButton extends React.Component {
 
   handleClick() {
     let {target} = this.props;
-    $('#' + target).openModal()
+    $('#' + target).modal('open');
   }
+
+
 
   render() {
     let {style, customClass, target} = this.props;

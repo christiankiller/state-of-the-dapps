@@ -1,9 +1,11 @@
-import React from "react";
+import React from 'react';
 
 class InfoModal extends React.Component {
   constructor(props) {
     super(props);
   }
+
+
 
   render() {
     return (
