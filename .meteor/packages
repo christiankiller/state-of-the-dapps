@@ -24,7 +24,6 @@ ejson@1.0.13                  # Extended and Extensible JSON library
 spacebars                     # Handlebars-like template language for Meteor
 check@1.2.4                   # Check whether a value matches a pattern
 email@1.1.18                  # Send email messages
-react@=0.1.12                 # React rendering framework
 materialize:materialize@=0.98.0      # Materialize (official): A modern responsive front-end framework based on Material Design
 fortawesome:fontawesome       # Font Awesome (official): 500+ scalable vector icons, customizable via CSS, Retina friendly
 fastclick@1.0.13              # Faster touch events on mobile
@@ -38,6 +37,4 @@ simple:rest                   # The easiest way to add a REST API to your Meteor
 # dev only
 meteortoys:allthings          # Insanely Handy Development Tools
 fourseven:scss                # Style with attitude. Sass and SCSS support for Meteor.js.
-
-
 
