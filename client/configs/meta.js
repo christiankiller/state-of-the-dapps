@@ -8,6 +8,12 @@ var metaInfo = [
 _.each(metaInfo, function (metaItem) {
   DocHead.addMeta(metaItem);
 });
+var materialFonts = {
+  rel: "stylesheet",
+  href: "https://fonts.googleapis.com/icon?family=Material+Icons"
+};
+DocHead.addLink(materialFonts);
+
 var linkInfo = [{rel: "icon", type: "image/png", href: "assets/logo/favicon.png"}];
 _.each(linkInfo, function (linkInfo) {
   DocHead.addLink(linkInfo);
